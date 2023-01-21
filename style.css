@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(63, 61, 61);
+}
+.holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    background-color: #eee;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+input{
+    width: 240px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+}
+
+button{
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: linear-gradient(150deg,#00ddeb,#5b42f3 50%,#af40ff);
+    /* animation: spin 0.4s linear infinite ease-in-out; */
+}
+
+button span{
+    display: flex;
+    border-radius: 6px;
+    padding: 16px 50px;
+    /* column-rule: ; */
+    color: white;
+    font-size: 22px;
+    background-color: #111;
+}
+
+button:hover span{
+    background: transparent;
+}
+
+/* @keyframes spin {
+
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(180deg);
+    }
+} */
